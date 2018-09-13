@@ -1,0 +1,16 @@
+﻿  Main.cpp
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(9): error C3646: 'x': especificador de invalidación desconocido
+  c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(44): note: vea la referencia a la creación de instancias de plantilla clase de 'vec3<T>' que se está compilando
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(9): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(10): error C3646: 'y': especificador de invalidación desconocido
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(10): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(11): error C3646: 'z': especificador de invalidación desconocido
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(11): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(15): error C2061: error de sintaxis: identificador 'V'
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(21): error C3861: 'x': no se encontró el identificador
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(21): error C2460: 'vec3<T>::<alignment member>': utiliza 'vec3<T>', que se está definiendo
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(21): error C2146: error de sintaxis: falta ';' delante del identificador 'y'
+c:\users\familia\documents\visual studio 2017\projects\vector3class\vector3class\vec3_class.h(44): fatal error C1903: no se puede recuperar de errores anteriores; se detiene la compilación
+  ERROR INTERNO DEL COMPILADOR en 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe'
+      Elija el comando Soporte técnico del menú Ayuda de Visual C++,
+  o abra el archivo de ayuda de Soporte técnico para obtener más información
