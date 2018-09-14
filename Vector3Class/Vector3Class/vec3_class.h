@@ -6,19 +6,22 @@ template <class T>
 class vec3
 {
 public:
-	V x;
-	V y;
-	V z;
+	T x;
+	T y;
+	T z;
 
 public:
 	// Constructors 
-	vec3<T>(V _x, V _y, V _z)
+	vec3<T>(T _x, T _y, T _z)
 	{
 		x = _x;
 		y = _y;
 		z = _z;
 	}
-	vec3<T>:x(0)y(0)z(0) {}
+	vec3<T>():x(0),y(0),z(0) 
+	{
+
+	}
 
 	//Destructor
 	//vec3<T>::~vec3<T>
@@ -30,7 +33,7 @@ public:
 	void operator+=(vec3<T> vector);
 	void operator-=(vec3<T> vector);
 	void operator=(vec3<T> vector) ;
-	void operator==(vec3<T> vector) const;
+	bool operator==(vec3<T> vector) const;
 
 
 	// Methods
@@ -141,11 +144,13 @@ double vec3<T>::get_module()
 }
 
 template<class T>
-vec3<T> vec<T>::get_vector_from(vec3 vector)
+vec3<T> vec3<T>::get_vector_from(vec3<T> vector)
 {
 	vec3 newvector = vec3(x - vector.x, y - vector.y, z - vector.z);
 	return newvector;
+	
 }
+
 
 #endif 
 
