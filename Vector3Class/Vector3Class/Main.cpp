@@ -39,6 +39,12 @@ int main()
 
 	printf("Distance between vectors 1 and 2 = %f\n", vector_1.distance_to(vector_2));
 
+	printf("Vector 2 - Vector 3 = 0?\n");
+
+	vec3<int> sub = vector_2 - vector_3;
+
+	printf("vector_sub = %i, %i, %i\n", sub.x, sub.y, sub.z);
+
 
 	system("pause");
 	return 0;
