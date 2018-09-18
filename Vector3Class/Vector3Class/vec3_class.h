@@ -12,6 +12,9 @@ public:
 
 public:
 	// Constructors 
+
+	vec3() {}
+
 	vec3(T x, T y, T z): // we can improve the constructor. no worries about name collision
 	
 		x(x),
@@ -19,10 +22,11 @@ public:
 		z(z)
 	{}
 
-	vec3<T>():x(0),y(0),z(0) 
-	{
-
-	}
+	vec3<T>():
+		x(0),
+		y(0),
+		z(0) 
+	{}
 
 	//Destructor
 	//vec3<T>::~vec3<T>
