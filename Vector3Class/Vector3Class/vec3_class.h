@@ -12,12 +12,13 @@ public:
 
 public:
 	// Constructors 
-	vec3<T>(T _x, T _y, T _z)
-	{
-		x = _x;
-		y = _y;
-		z = _z;
-	}
+	vec3(T x, T y, T z): // we can improve the constructor. no worries about name collision
+	
+		x(x),
+		y(y),
+		z(z)
+	{}
+
 	vec3<T>():x(0),y(0),z(0) 
 	{
 
