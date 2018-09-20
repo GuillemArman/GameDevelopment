@@ -22,11 +22,6 @@ public:
 		z(z)
 	{}
 
-	vec3<T>():
-		x(0),
-		y(0),
-		z(0) 
-	{}
 
 	//Destructor
 	//vec3<T>::~vec3<T>
@@ -139,7 +134,7 @@ double vec3<T>::distance_to(vec3 vector)
 	dx = x - vector.x;
 	dy = y - vector.y;
 	dz = z - vector.z;
-	return sqrt(pow(dx, 2) + pow(dy, 2) + pow(dz, 2));
+	return sqrt(pow(dx, 2) + pow(dy, 2) + pow(dz, 2)); // pow is a function so you don't want to call it. Substitute it by number * number (faster)
 }
 
 template<class T>
