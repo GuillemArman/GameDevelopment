@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<iostream>
 #include "vec3_class.h"
+#include "string_class.h"
 
 using namespace std;
 
