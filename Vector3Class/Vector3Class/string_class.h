@@ -2,12 +2,13 @@
 #define _STRING_CLASS_
 
 #include <iostream>
+#include <string>
 
 class String
 {
 public:
 
-	char* data;
+	char* data = nullptr;
 	unsigned int length;
 	
 public:
@@ -46,23 +47,17 @@ unsigned String::len() const
 
 
 // OPERATOR =
-String String::operator= (const String s)
-{
-	if (this == &s) return *this;
 
-	delete data;
-	length = s.len();
-	data = new char[length];
-	for (int j = 0; j < length; j++)
-		data[j] = s[j];
-	return *this;
-
-}
 
 char String::operator[] (unsigned j) const
 {
 	if (j >= length) throw 1;
 	return data[j];
+}
+
+String String::operator+= (const String s)
+{
+
 }
 
 
