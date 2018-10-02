@@ -51,16 +51,4 @@ int main()
 	return 0;
 }
 
-String String::operator= (const String s)
-{
-	if (this == &s) return *this;
-
-	delete data;
-	length = s.len();
-	data = new char[length];
-	for (int j = 0; j < length; j++)
-		data[j] = s[j];
-	return *this;
-
-}
 
